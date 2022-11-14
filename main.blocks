@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="Bw7!A35f?SK-3e)#-yeU" x="0" y="0"><statement name="HANDLER"><block type="max7219_matrix_setup" id="AP!IQ3NwM(A`7xu(:T%8"><field name="cs">DigitalPin.P12</field><field name="mosi">DigitalPin.P15</field><field name="miso">DigitalPin.P14</field><field name="sck">DigitalPin.P13</field><value name="num"><shadow type="math_number" id="t^|ZPx!mc7IVQ@#q}8rk"><field name="NUM">4</field></shadow></value><next><block type="max7219_matrix_for_4_in_1_modules" id="yu+25v:a.mXZ@:_28GoW"><field name="rotation">rotation_direction.counterclockwise</field><value name="reversed"><shadow type="logic_boolean" id="Q8KQ%eUz]n?F6:1Xo=6P"><field name="BOOL">TRUE</field></shadow></value><next><block type="device_show_leds" id="Z)JyYW.I($8i2ijl4quy"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        . # # # . 
+        # # # # # 
+        . . # . .
+        `</field><next><block type="device_show_leds" id="``d!3$=9oX#B@7M.Gdtx"><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        # # # # # 
+        . # . # . 
+        # . . . #
+        `</field></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="Load0f!.v$?WIS^H3jE~" x="333" y="11"><statement name="HANDLER"><block type="max7219_matrix_scrollText" id="v;WMR(~P*84|w:I9e(b*"><value name="text"><shadow type="text" id="wDJ!AtK:Q(*a,yf}@72~"><field name="TEXT">Feliz Navidad</field></shadow></value><value name="delay"><shadow type="math_number" id="-o5;!kyqq1DiFb;/:y2e"><field name="NUM">0</field></shadow></value><value name="endDelay"><shadow type="math_number" id="PC[zSqASV9`%OQ]kfGQW"><field name="NUM">1</field></shadow></value></block></statement></block></xml>
