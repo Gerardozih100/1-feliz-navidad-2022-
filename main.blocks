@@ -1,13 +1,31 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="Bw7!A35f?SK-3e)#-yeU" x="0" y="0"><statement name="HANDLER"><block type="max7219_matrix_setup" id="AP!IQ3NwM(A`7xu(:T%8"><field name="cs">DigitalPin.P12</field><field name="mosi">DigitalPin.P15</field><field name="miso">DigitalPin.P14</field><field name="sck">DigitalPin.P13</field><value name="num"><shadow type="math_number" id="t^|ZPx!mc7IVQ@#q}8rk"><field name="NUM">4</field></shadow></value><next><block type="max7219_matrix_for_4_in_1_modules" id="yu+25v:a.mXZ@:_28GoW"><field name="rotation">rotation_direction.counterclockwise</field><value name="reversed"><shadow type="logic_boolean" id="Q8KQ%eUz]n?F6:1Xo=6P"><field name="BOOL">TRUE</field></shadow></value><next><block type="device_show_leds" id="Z)JyYW.I($8i2ijl4quy"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="Bw7!A35f?SK-3e)#-yeU" x="0" y="0"><statement name="HANDLER"><block type="max7219_matrix_setup" id="AP!IQ3NwM(A`7xu(:T%8"><field name="cs">DigitalPin.P12</field><field name="mosi">DigitalPin.P15</field><field name="miso">DigitalPin.P14</field><field name="sck">DigitalPin.P13</field><value name="num"><shadow type="math_number" id="t^|ZPx!mc7IVQ@#q}8rk"><field name="NUM">4</field></shadow></value><next><block type="max7219_matrix_for_4_in_1_modules" id="yu+25v:a.mXZ@:_28GoW"><field name="rotation">rotation_direction.counterclockwise</field><value name="reversed"><shadow type="logic_boolean" id="Q8KQ%eUz]n?F6:1Xo=6P"><field name="BOOL">TRUE</field></shadow></value><next><block type="device_show_leds" id="``d!3$=9oX#B@7M.Gdtx"><field name="LEDS">`
+        . . . . . 
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
+        `</field><next><block type="device_pause" id="4K8V(lwU,f$6}jiXEOZD"><value name="pause"><shadow type="timePicker" id="A%C7M,lr~F+!#wE542Uq"><field name="ms">1000</field></shadow></value><next><block type="device_show_leds" id="Z)JyYW.I($8i2ijl4quy"><field name="LEDS">`
         . . # . . 
         . # # # . 
         . # # # . 
         # # # # # 
         . . # . .
-        `</field><next><block type="device_show_leds" id="``d!3$=9oX#B@7M.Gdtx"><field name="LEDS">`
+        `</field></block></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="Load0f!.v$?WIS^H3jE~" x="333" y="11"></block><block type="device_button_event" id=",1}s_~-=^r)i=BP3z1Fw" x="459" y="131"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="FRS-UJ*k=Q`^w/U;WN5["><field name="LEDS">`
         . . . . . 
+        . . . . # 
+        . . . # . 
+        # . # . . 
+        . # . . .
+        `</field><next><block type="device_pause" id="-D5-Ey#[G5@`:O-/!{7R"><value name="pause"><shadow type="timePicker" id="j2y,,1kKit@[Vk!7.^Ub"><field name="ms">1000</field></shadow></value><next><block type="device_clear_display" id=":fCELkYbMk1449fQI=Bw"><next><block type="max7219_matrix_scrollText" id="v;WMR(~P*84|w:I9e(b*"><value name="text"><shadow type="text" id="wDJ!AtK:Q(*a,yf}@72~"><field name="TEXT">Feliz Navidad</field></shadow></value><value name="delay"><shadow type="math_number" id="-o5;!kyqq1DiFb;/:y2e"><field name="NUM">0</field></shadow></value><value name="endDelay"><shadow type="math_number" id="PC[zSqASV9`%OQ]kfGQW"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="kBTra=cV-sALS}zbwK7`"><field name="LEDS">`
         . . # . . 
+        . # # # . 
+        . # # # . 
         # # # # # 
+        . . # . .
+        `</field></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="6KL?ZFa.d!6UOazT8_9J" x="800" y="130"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="max7219_matrix_clearAll" id="iQND-QnPJT4.yKq{F)go"><next><block type="device_show_leds" id="ep2esz47t2(|jymC%n?w"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
         . # . # . 
         # . . . #
-        `</field></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="Load0f!.v$?WIS^H3jE~" x="333" y="11"><statement name="HANDLER"><block type="max7219_matrix_scrollText" id="v;WMR(~P*84|w:I9e(b*"><value name="text"><shadow type="text" id="wDJ!AtK:Q(*a,yf}@72~"><field name="TEXT">Feliz Navidad</field></shadow></value><value name="delay"><shadow type="math_number" id="-o5;!kyqq1DiFb;/:y2e"><field name="NUM">0</field></shadow></value><value name="endDelay"><shadow type="math_number" id="PC[zSqASV9`%OQ]kfGQW"><field name="NUM">1</field></shadow></value></block></statement></block></xml>
+        `</field><next><block type="device_pause" id="enA?ICYL5gElsz3qnqP]"><value name="pause"><shadow type="timePicker" id="BJvQHF!Bp+l@CaCF*vJ-"><field name="ms">1000</field></shadow></value><next><block type="device_clear_display" id="h3[{v37an#SA)eo!YNqA"></block></next></block></next></block></next></block></statement></block></xml>

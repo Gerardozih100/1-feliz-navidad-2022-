@@ -1,3 +1,38 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . #
+        . . . # .
+        # . # . .
+        . # . . .
+        `)
+    basic.pause(1000)
+    basic.clearScreen()
+    max7219_matrix.scrollText(
+    "Feliz Navidad",
+    0,
+    1
+    )
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        . # # # .
+        # # # # #
+        . . # . .
+        `)
+})
+input.onButtonPressed(Button.B, function () {
+    max7219_matrix.clearAll()
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        # . . . #
+        `)
+    basic.pause(1000)
+    basic.clearScreen()
+})
 max7219_matrix.setup(
 4,
 DigitalPin.P12,
@@ -10,23 +45,20 @@ rotation_direction.counterclockwise,
 true
 )
 basic.showLeds(`
-    . . # . .
-    . # # # .
-    . # # # .
-    # # # # #
-    . . # . .
-    `)
-basic.showLeds(`
     . . . . .
+    . . . . #
+    . . . # .
+    # . # . .
+    . # . . .
+    `)
+basic.pause(1000)
+basic.showLeds(`
     . . # . .
+    . # # # .
+    . # # # .
     # # # # #
-    . # . # .
-    # . . . #
+    . . # . .
     `)
 basic.forever(function () {
-    max7219_matrix.scrollText(
-    "Feliz Navidad",
-    0,
-    1
-    )
+	
 })
