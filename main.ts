@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.A, function () {
+    On += 90000
     basic.showLeds(`
         . . . . .
         . . . . #
@@ -7,12 +8,6 @@ input.onButtonPressed(Button.A, function () {
         . # . . .
         `)
     basic.pause(1000)
-    basic.clearScreen()
-    max7219_matrix.scrollText(
-    "Feliz Navidad",
-    0,
-    1
-    )
     basic.showLeds(`
         . . # . .
         . # # # .
@@ -20,19 +15,16 @@ input.onButtonPressed(Button.A, function () {
         # # # # #
         . . # . .
         `)
+    for (let index = 0; index < On; index++) {
+        max7219_matrix.scrollText(
+        "Feliz Navidad",
+        0,
+        1
+        )
+    }
+    basic.showString(" Off")
 })
-input.onButtonPressed(Button.B, function () {
-    max7219_matrix.clearAll()
-    basic.showLeds(`
-        # . . . #
-        . # . # .
-        . . # . .
-        . # . # .
-        # . . . #
-        `)
-    basic.pause(1000)
-    basic.clearScreen()
-})
+let On = 0
 max7219_matrix.setup(
 4,
 DigitalPin.P12,
@@ -44,13 +36,7 @@ max7219_matrix.for_4_in_1_modules(
 rotation_direction.counterclockwise,
 true
 )
-basic.showLeds(`
-    . . . . .
-    . . . . #
-    . . . # .
-    # . # . .
-    . # . . .
-    `)
+basic.showString("On")
 basic.pause(1000)
 basic.showLeds(`
     . . # . .
@@ -59,6 +45,4 @@ basic.showLeds(`
     # # # # #
     . . # . .
     `)
-basic.forever(function () {
-	
-})
+On = 0
